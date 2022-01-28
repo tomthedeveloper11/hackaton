@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel ="icon" href="Asset/logohnh.png" type="image/icon type">
+    <link rel="stylesheet" href="signInSignUp.css">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;900&family=Nunito:wght@200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1 id="title">
+            SIGN UP
+        </h1>
+        <form id="signUp-form">
+            <label for="username" id="username-label">Username</label>
+            <input type="text" id="username" placeholder="Enter your username" required>
+            <label for="password" id="password-label">Password</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required>
+            <label for="email" id="email-label">Email</label>
+            <input type="email" name="email" id="email" placeholder="Enter your email (Optional)" >
+            <div class="container-btn flex">
+                <a href="signIn.html" class="button_su_inner sign-in">
+                    <span class="button_text_container">
+                        Sign In
+                    </span>
+                </a>
+                <button class="button_su_inner sign-up">
+                    <span class="button_text_container">
+                        Sign Up
+                    </span>
+                </button>
+            </div>
+        </form>
+    </div>
+
+    <script src="signUp.js"></script>
+</body>
+</html>

@@ -1,0 +1,107 @@
+
+
+overflow {
+  overflow: auto;
+}
+
+/* helper class area */
+a {
+  text-decoration: none;
+  color: white;
+}
+h1 {
+  margin: 1rem;
+}
+
+.container {
+    max-width: 899px;
+    margin: 0 auto;
+    
+}
+.grid {
+    display: grid;
+}
+
+.flex {
+    display: flex;
+}
+
+/* main content area */
+.main-content {
+    height: 100vh;
+}
+.mainFlex {
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+
+}
+/* articles content area */
+
+.content {
+    padding: 5% 0;
+    height: 100%;
+    grid-template-rows: repeat(6,1fr);
+    grid-template-columns: repeat(5,1fr);
+    gap: 1.25rem;
+}
+
+.content-item {
+
+    color: aliceblue;
+    font-weight: 900;
+    text-align: center; 
+    display: grid;
+    align-items: center;
+
+    background-color: rgb(224, 224, 224);
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-position: center;
+    /* transition: all ease-in-out; */
+
+}
+
+.low {
+    grid-row: span 1;
+    grid-column: span 1;
+}
+.medium {
+    grid-row: span 2;
+    grid-column: span 2;
+}
+.large {
+    grid-row: span 3;
+    grid-column: span 3;
+}
+.tall {
+    grid-row: span 3;
+    grid-column: span 2;
+}
+.wide {
+    grid-row: span 2;
+    grid-column: span 3;
+}
+
+.one {
+    background-image: url('./Asset/img/Resep/Almond-Energy-Bar.webp');
+}
+.two {
+    background-image: url('./Asset/img/Resep/banana_cupcake.jpg');
+}
+.three {
+    background-image: url('./Asset/img/Resep/hummus.jpg');
+}
+.four {
+    background-image: url('./Asset/img/Resep/rosemary.jpg');
+}
+.five {
+    background-image: url('./Asset/img/Resep/saladayam.jpg');
+}
+.six {
+    background-image: url('./Asset/img/Resep/simple-guacamole-recipe-2342710-hero-01-0abcdd8e923c41788d0c38230cd7d86e.jpg');
+
+}
+.content-item:hover {
+    background-blend-mode: initial;
+}
